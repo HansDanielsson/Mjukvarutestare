@@ -5,7 +5,7 @@ const Animal = require('./animal')
 let myAnimal = new Animal("Elvis", 15, "Cat")
 
 console.log(myAnimal.name)
-myAnimal.toString()
+console.log(myAnimal.toString())
 
 //Birthday
 myAnimal.aging()

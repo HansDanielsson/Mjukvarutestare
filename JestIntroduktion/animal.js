@@ -10,7 +10,13 @@ class Animal {
     }
 
     toString() {
-        console.log(`Denna ${this.species} heter ${this.name} och är ${this.age} år gammal.`)
+        return(`Denna ${this.species} heter ${this.name} och är ${this.age} år gammal.`)
+    }
+
+    rename(newName) {
+        if (newName.includes("xxx")) return "Felaktigt namn"
+
+        this.name = newName
     }
 }
 
